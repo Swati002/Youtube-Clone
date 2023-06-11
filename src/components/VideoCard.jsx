@@ -5,6 +5,7 @@ import { CheckCircle } from '@mui/icons-material'
 
 import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle,demoChannelUrl, demoChannelTitle } from '../utils/contants'
 const  VideoCard = ({video:{id:{videoId}, snippet}}) => { 
+  // {video:{id:{videoId}, snippet}} -> represent a structure with information about a video, including its ID and additional details stored under the snippet key. 
   return (
     <Card  sx={{width:{md:'340px', xs:'100%'}  ,boxShadow:'none', borderRadius:'0'}}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
